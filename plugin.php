@@ -117,7 +117,8 @@ if( !class_exists( 'Clockwork_SMS' ) ) {
                 	$phone = $_POST['phone'];
 
                 	try {
-                    		$clockwork = new Clockwork( $this->API_KEY );
+				$options = array('ssl' => false);
+                    		$clockwork = new Clockwork( $this->API_KEY , $options);
                     		$message = array( 'to' => $phone, 'message' => $this->text_message );
                     		$result = $clockwork->send( $message );
 
