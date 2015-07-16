@@ -47,7 +47,7 @@ if( !class_exists( 'Clockwork_SMS' ) ) {
 	class Clockwork_SMS {
 
                	// the api key which has credits
-               	public $API_KEY = '6f1e77db42b23e453bd30c91498a2c5dbed359ed';
+               	public $API_KEY = 'api key here';
 
 		// default message to send
 		public $text_message = 'Default Message to Send';
